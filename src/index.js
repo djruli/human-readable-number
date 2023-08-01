@@ -1,11 +1,46 @@
 module.exports = function toReadable (number) {
     let result = '';
-  if (number >= 100){
-
-  } else if (number > 19) {
-
-  } else if (number === 0) {
+    if (number === 0) {
             result = 'zero'
+        return result;
+  } 
+  if (number >= 100){
+    let hundreeds = Math.trunc(number/100);
+    if (hundreeds === 1) {
+        result = result +'one hundreed '
+        number = number - 100;
+    } else if (hundreeds === 2) {
+        result = result +'two hundreed '
+        number = number - 200;
+    } else if (hundreeds === 3) {
+        result = result +'three hundreed '
+        number = number - 300;
+    } else if (hundreeds === 4) {
+        result = result +'four hundreed ' 
+        number = number - 400;
+    } else if (hundreeds === 5) {
+        result = result +'five hundreed '
+        number = number - 500;
+    } else if (hundreeds === 6) {
+        result = result +'six hundreed '
+        number = number - 600;
+    } else if (hundreeds === 7) {
+        result = result +'seven hundreed '
+        number = number - 700;
+    } else if (hundreeds === 8) {
+        result = result +'eight hundreed '
+        number = number - 800;
+    } else if (hundreeds === 9) {
+        result = result +'nine hundreed '
+        number = number - 900;
+    } 
+  }
+    if (number === 0) {
+        return result;
+  }
+
+  if (number > 19) {
+
   } else if (number === 1){
     result = result +'one'
   }else if (number === 2){
