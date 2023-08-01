@@ -7,31 +7,31 @@ module.exports = function toReadable (number) {
   if (number >= 100){
     let hundreeds = Math.trunc(number/100);
     if (hundreeds === 1) {
-        result = result +'one hundreed '
+        result = result +'one hundred '
         number = number - 100;
     } else if (hundreeds === 2) {
-        result = result +'two hundreed '
+        result = result +'two hundred '
         number = number - 200;
     } else if (hundreeds === 3) {
-        result = result +'three hundreed '
+        result = result +'three hundred '
         number = number - 300;
     } else if (hundreeds === 4) {
-        result = result +'four hundreed ' 
+        result = result +'four hundred ' 
         number = number - 400;
     } else if (hundreeds === 5) {
-        result = result +'five hundreed '
+        result = result +'five hundred '
         number = number - 500;
     } else if (hundreeds === 6) {
-        result = result +'six hundreed '
+        result = result +'six hundred '
         number = number - 600;
     } else if (hundreeds === 7) {
-        result = result +'seven hundreed '
+        result = result +'seven hundred '
         number = number - 700;
     } else if (hundreeds === 8) {
-        result = result +'eight hundreed '
+        result = result +'eight hundred '
         number = number - 800;
     } else if (hundreeds === 9) {
-        result = result +'nine hundreed '
+        result = result +'nine hundred '
         number = number - 900;
     } 
   }
